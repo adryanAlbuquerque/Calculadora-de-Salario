@@ -1,0 +1,110 @@
+/* Fundo em roxo bebê muito suave */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4e9ff; /* roxo bebê */
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card central */
+.container {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+
+  /* sombra suave elegante */
+  box-shadow: 0 8px 25px rgba(124, 50, 155, 0.20);
+  text-align: center;
+
+  animation: fadeIn .4s ease;
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Título */
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #6d3ea8; /* roxo mais forte */
+  margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #5a2d84;
+  text-align: left;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+input {
+  width: 90%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+
+  border: 2px solid #d8c2f1;
+  background: #faf7ff;
+  transition: 0.25s;
+}
+
+input:focus {
+  border-color: #a575ff;
+  outline: none;
+  box-shadow: 0 0 0 3px #e4d5ff;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #a575ff; /* roxo bebê mais forte */
+  color: #fff;
+
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #8e4eff;
+}
+
+/* Caixa de resultados */
+.resultado {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f8f2ff;
+  border: 1px solid #dfc8ff;
+  text-align: left;
+}
+
+.resultado div {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Mensagem de erro */
+.erro {
+  margin-top: 10px;
+  color: #b00020;
+  font-weight: 600;
+}

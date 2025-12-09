@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Calculadora de Salário Líquido</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Calculadora de Salário Líquido</h1>
+
+    <label for="salarioBruto">Salário Bruto (R$):</label>
+    <input id="salarioBruto" type="text" placeholder="Ex: 2000">
+
+    <button id="calcular">Calcular</button>
+
+    <div class="resultado">
+      <div><strong>INSS:</strong> <span id="resultadoInss">-</span></div>
+      <div><strong>IRRF:</strong> <span id="resultadoIrrf">-</span></div>
+      <div><strong>Salário Líquido:</strong> <span id="salarioLiquido">-</span></div>
+      <div id="mensagemErro" class="erro"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
